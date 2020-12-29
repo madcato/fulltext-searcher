@@ -13,6 +13,6 @@ end
 db = SQLite3::Database.new 'wikipedia.db'
 
 # Find term from params
-db.execute( "select * from wiki_texts where abstract MATCHMATCH ?", ARGV[1] ) do |row|
+db.execute( "select * from wiki_texts where abstract MATCH ?", param ) do |row|
   p row
 end
