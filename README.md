@@ -8,15 +8,29 @@ Project to investigate sqlite fulltext capabilities and RTree indexation.
 - [The SQLite R*Tree Module](https://sqlite.org/rtree.html)
 - [Nokigiri](https://nokogiri.org)
 
-## Requiremnets
+## Requirements
 
 - Sqlite3 for Ruby: `gem install sqlite3`
 - Nokigiri: `gem install nokogiri`
 
-## Data
+## Usage
+
+### Download data
 
 - [Wikipedia:Database download](https://en.wikipedia.org/wiki/Wikipedia:Database_download)
-- [enwiki-latest-abstract.xml.gz](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-abstract.xml.gz)
+- [Download this file: enwiki-latest-abstract.xml.gz](https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-abstract.xml.gz)
+
+### Run dumpit.rb
+
+    $ ruby dumpit.rb
+
+### Search by executing
+
+    $ ruby searchit.rb term_to_search-for
+
+or
+
+    $ ruby advance_searchit.rb term_to_search-for
 
 ## Parse XML in Ruby using Nokigiri
 
